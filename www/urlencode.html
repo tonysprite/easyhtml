@@ -19,6 +19,7 @@
     <link href="css/base.css" rel="stylesheet">
     <style>
 	textarea{
+		width:100%;
 		height:40%;padding:0 10px 10px 20px;border:0;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-radius:0;resize: none; outline:none;
 	}
     </style>
@@ -33,14 +34,10 @@
 <body style="over-flow:hidden;">
 <header class="header">
     <div class="row-fluid" >
-        <div class="col-md-5" style="position:relative;">
-            <a class="logo" href="index.html">www.<span style="color:#555;">easyhtml.cn</span></a>
-
-        </div>
         <nav class="col-md-7" style="padding:10px 0;"  align="right">
             <div  class="navi">
             	  <a href="http://doc.easyhtml.cn" data-placement="bottom" target="_blank">我的博客</a>
-                <a href="index.html" data-placement="bottom">JSON在线解析</a>
+                <a href="index.html" data-placement="bottom">json</a>
                 <a href="urlencode.html"  data-placement="bottom">urlencode</a>
 		<a href="bootstrap-calculator/index.html" data-placement="bottom">计算器</a>
             </div>
@@ -51,18 +48,18 @@
 
 
 <main class="row-fluid" style="height:85%;min-height:550px;">
-    <div class="col-md-5" style="margin:30px 0 30px 30px; padding:0px;height:100%;">
+    <div style="margin:30px 0 30px 30px; padding:0px;height:100%;">
 	<h3>urlencode</h3>
 	<textarea id='urlencodeInput' type='text' value='' placeholder='请输入'></textarea>
-	<input id='urlencodeBtn' type='button' name='urlencodeBtn' value='urlencode' onclick='urlencode()'/>
-	<textarea id='urlencodeResult' type='text' placeholder='urlencode结果' ></textarea>
+	<input id='urlencodeBtn' type='button' name='urlencodeBtn' value='确认' onclick='urlencode()'/>
+	<textarea id='urlencodeResult' type='text' ></textarea>
     </div>
 
-    <div class="col-md-5" style="margin:30px 0 30px 30px; padding:0px;height:100%;">
+    <div style="margin:30px 0 30px 30px; padding:0px;height:100%;">
 	<h3>urldecode</h3>
         <textarea id='urldecodeInput' type='text' value='' placeholder='请输入'></textarea>
-        <input id='urldecodeBtn' type='button' name='urldecodeBtn' value='urldecode' onclick='urldecode()'/>
-        <textarea id='urldecodeResult' type='text' placeholder='urldecode结果' ></textarea>
+        <input id='urldecodeBtn' type='button' name='urldecodeBtn' value='确认' onclick='urldecode()'/>
+        <textarea id='urldecodeResult' type='text' ></textarea>
     </div>
     <br style="clear:both;" />
 </main>
